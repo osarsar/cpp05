@@ -2,9 +2,9 @@
 
 int main()
 {
-    Bureaucrat obj;
     try
     {
+        Bureaucrat obj;
         obj.incre_grade();
         std::cout << obj << std::endl;
     }

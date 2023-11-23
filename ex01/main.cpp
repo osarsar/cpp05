@@ -2,10 +2,10 @@
 
 int main()
 {
-    Form obj;
-    Bureaucrat Br;
     try
     {
+        Form obj;
+        Bureaucrat Br;
         Br.setGrade(9);
         Br.decre_grade();
         std::cout << Br.getGrade() << std::endl;

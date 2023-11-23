@@ -13,7 +13,7 @@ Form::~Form()
 {
     std::cout << "Form: Destructor called" << std::endl;
 }
-Form::Form(Form const &obj) : name("HERO") , sign(false) , egrade(1), sgrade(1) 
+Form::Form(Form const &obj) : name(obj.name) , egrade(obj.egrade), sgrade(obj.sgrade) 
 {
     if (this->sgrade > 150 || this->egrade > 150)
         throw Bureaucrat::GradeTooLowException();

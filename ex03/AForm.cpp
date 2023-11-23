@@ -13,7 +13,7 @@ AForm::~AForm()
 {
     std::cout << "AForm: Destructor called" << std::endl;
 }
-AForm::AForm(AForm const &obj) : name("Default") , sign(false) , egrade(1), sgrade(1) 
+AForm::AForm(AForm const &obj) : name(obj.name) , egrade(obj.egrade), sgrade(obj.sgrade)
 {
     if (this->sgrade > 150 || this->egrade > 150)
         throw Bureaucrat::GradeTooLowException();

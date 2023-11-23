@@ -14,7 +14,7 @@ Bureaucrat::~Bureaucrat()
 {
     std::cout << "Bureaucrat: Destructor called" << std::endl;
 }
-Bureaucrat::Bureaucrat(Bureaucrat const &obj)
+Bureaucrat::Bureaucrat(Bureaucrat const &obj) : name(obj.name)
 {
     std::cout << "Bureaucrat: Copy construtor called" << std::endl;
     *this = obj;
